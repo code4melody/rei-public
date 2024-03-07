@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jeopardy!</title>
+<script>
+function add(index) {
+	var value = parseInt(document.getElementById("point" + index).value, 10)
+	var currentScore = parseInt(document.getElementById("score" + index).innerHTML, 10)
+
+	document.getElementById("score" + index).innerHTML = currentScore + value
+}
+
+function subtract(index) {
+	var value = parseInt(document.getElementById("point" + index).value, 10)
+	var currentScore = parseInt(document.getElementById("score" + index).innerHTML, 10)
+
+	document.getElementById("score" + index).innerHTML = currentScore - value
+}
+</script>
+<style>
+#header {
+	text-align: center;
+	font-family: "Bungee Inline", sans-serif;
+	font-size: 60px;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	font-weight: bold;
+}
+
+#scoreboardContainer {
+	text-align: center;
+}
+
+#scoreboard td {
+	border: 1px solid black;
+	width: 18%;
+	color: #e6d115;
+	background-color: #036bfc;
+	font-size: 2em;
+}
+
+#scoreboard {
+	margin: auto;
+	font-family: sans-serif;
+}
+
+.add {
+	color: #00f79d;
+	font-weight: bold;
+}
+
+.subtract {
+	color: #f75265;
+	font-weight: bold;
+
+}
+
+body {
+	background-color: #5c5b5a;
+}
+</style>
+</head>
+<body>
+<h1 id="header">SCOREBOARD</h1>
+<div id="scoreboardContainer">
+<table id="scoreboard">
+	<tr>
+		<td><img src='team1.jpg' width='300px' height='200px' /><br><u>Team 1</u><br>
+		<b>Points</b>: <span id="score1">0</span><br>
+		<input type="number" id="point1" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add1" onclick="add(1)">+</span>&nbsp;<span class="subtract" id="subtract1" onclick="subtract(1)">-</span>
+		</td>
+		
+		<td><img src='team2.jpg' width='300px' height='200px' /><br><u>Team 2</u><br>
+		<b>Points</b>: <span id="score2">0</span><br>
+		<input type="number" id="point2" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add2" onclick="add(2)">+</span>&nbsp;<span class="subtract" id="subtract2" onclick="subtract(2)">-</span>
+		</td>
+
+		<td><img src='team3.jpg' width='300px' height='200px' /><br><u>Team 3</u><br>
+		<b>Points</b>: <span id="score3">0</span><br>
+		<input type="number" id="point3" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add3" onclick="add(3)">+</span>&nbsp;<span class="subtract" id="subtract3" onclick="subtract(3)">-</span>
+		</td>
+
+		<td><img src='team4.jpg' width='300px' height='200px' /><br><u>Team 4</u><br>
+		<b>Points</b>: <span id="score4">0</span><br>
+		<input type="number" id="point4" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add4" onclick="add(4)">+</span>&nbsp;<span class="subtract" id="subtract4" onclick="subtract(4)">-</span>
+		</td>
+
+		<td><img src='team5.jpg' width='300px' height='200px' /><br><u>Team 5</u><br>
+		<b>Points</b>: <span id="score5">0</span><br>
+		<input type="number" id="point5" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add5" onclick="add(5)">+</span>&nbsp;<span class="subtract" id="subtract5" onclick="subtract(5)">-</span>
+		</td>
+	</tr>
+	<tr>
+		<td><img src='team6.jpg' width='300px' height='200px' /><br><u>Team 6</u><br>
+		<b>Points</b>: <span id="score6">0</span><br>
+		<input type="number" id="point6" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add6" onclick="add(6)">+</span>&nbsp;<span class="subtract" id="subtract6" onclick="subtract(6)">-</span>
+		</td>
+
+		<td><img src='team7.jpg' width='300px' height='200px' /><br><u>Team 7</u><br>
+		<b>Points</b>: <span id="score7">0</span><br>
+		<input type="number" id="point7" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add7" onclick="add(7)">+</span>&nbsp;<span class="subtract" id="subtract7" onclick="subtract(7)">-</span>
+		</td>
+
+		<td><img src='team8.jpg' width='300px' height='200px' /><br><u>Team 8</u><br>
+		<b>Points</b>: <span id="score8">0</span><br>
+		<input type="number" id="point8" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add8" onclick="add(8)">+</span>&nbsp;<span class="subtract" id="subtract8" onclick="subtract(8)">-</span>
+		</td>
+
+		<td><img src='team9.jpg' width='300px' height='200px' /><br><u>Team 9</u><br>
+		<b>Points</b>: <span id="score9">0</span><br>
+		<input type="number" id="point9" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add9" onclick="add(9)">+</span>&nbsp;<span class="subtract" id="subtract9" onclick="subtract(9)">-</span>
+		</td>
+
+		<td><img src='team10.jpg' width='300px' height='200px' /><br><u>Team 10</u><br>
+		<b>Points</b>: <span id="score10">0</span><br>
+		<input type="number" id="point10" style="font-size: 20px;" />&nbsp;&nbsp;<span class="add" id="add10" onclick="add(10)">+</span>&nbsp;<span class="subtract" id="subtract10" onclick="subtract(10)">-</span>
+		</td>
+	</tr>
+</table>
+</div>
+</body>
+</html>
